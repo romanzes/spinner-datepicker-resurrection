@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         int year = selectedDate.get(Calendar.YEAR);
         int month = selectedDate.get(Calendar.MONTH);
         int day = selectedDate.get(Calendar.DAY_OF_MONTH);
-        new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
+        Dialogs.createDatePicker(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 selectedDate.set(Calendar.YEAR, year);
